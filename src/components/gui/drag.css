@@ -1,0 +1,63 @@
+.popContainer {
+    position        : fixed;
+    width           : 528px;
+    height          : 342px;
+    background-color: white;
+    z-index         : 101;
+    box-shadow      : 0px 4px 12px 0px rgba(0, 0, 0, 0.45);
+    border-radius   : 4px;
+    resize          : both;
+    overflow        : auto;
+    /* min-width       : 200px; */
+    /* min-height      : 60px; */
+
+
+    
+}
+.video-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 550;
+    display: block;
+}
+video::-webkit-media-controls-fullscreen-button {
+display: none;
+}
+.content {
+    height    : calc(100% - 37px);
+    /* overflow-y: scroll; */
+    /* padding   : 24px; */
+}
+
+.header {
+    padding      : 5px 16px;
+    color        : rgba(0, 0, 0, 0.65);
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 4px 4px 0 0;
+}
+.header .title {
+    cursor     : move;
+    color      : rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size  : 16px;
+    line-height: 22px;
+}
+.header  .close {
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    cursor     : pointer;
+    width      : 56px;
+    /* height     : 56px; */
+    font-size  : 16px;
+    line-height: 37px;
+    text-align : center;
+    color      : rgba(0, 0, 0, 0.45);
+
+    &:hover {
+        color: black;
+    }
+}
